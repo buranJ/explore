@@ -1,0 +1,126 @@
+.hero {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-top: 74px;
+        max-width: 600px;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    &__description {
+        max-width: 487px;
+        font-size: 18px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.55);
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__div-input {
+        display: flex;
+        align-items: center;
+        max-width: 468px;
+        height: 48px;
+        border: 2px;
+        border-color: white;
+        border-radius: 15px;
+        background-color: rgb(48, 55, 61);
+        padding: 8px 11px 8px 18px;
+    }
+
+    &__input {
+        width: 190px;
+        height: 21px;
+        background-color: rgb(48, 55, 61);
+        border: 0;
+        color: white;
+        margin: 21px 111px 21px 13px;
+        outline: none;
+    }
+
+    &__btn {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 15px 36px;
+        border-radius: 8px;
+        border: 0;
+        border-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        cursor: pointer;
+        background-color: rgba(255, 110, 48, 1);
+        transition: 0.6s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 110px;
+        width: 190px;
+        height: 58px;
+    }
+
+    &__right {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:1200px) {
+    .hero {
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__left {
+            display: flex;
+            width: 96%;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 96%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__description {
+            text-align: center;
+        }
+
+        &__title {
+            max-width: 100%;
+            font-size: 36px;
+            text-align: center;
+        }
+
+    }
+}
+
+@media(max-width:550px) {
+    .hero {
+        &__input {
+            margin: 21px 0px 21px 13px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+    }
+}

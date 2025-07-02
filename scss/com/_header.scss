@@ -1,0 +1,60 @@
+.header {
+    .burger {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    &__btn {
+        font-size: 16px;
+        background: none;
+        padding: 12px 28px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        transition: 10s;
+
+        &:hover {
+            background-color: rgba(255, 110, 48, 1);
+            border-radius: 8px;
+            transform: rotate(10800deg);
+
+        }
+
+    }
+}
+
+@media(max-width: 750px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+
+}
+@media(max-width: 460px) {
+    .header{
+        &__btns{
+            display: none;
+        }
+    }
+}

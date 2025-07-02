@@ -1,0 +1,50 @@
+.last {
+    border-top: rgba(255, 255, 255, 0.15) 1px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 240px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        gap: 156px;
+    }
+    &__left{
+        width: 260px;
+        height: 183px;
+        margin-bottom: 98px;
+    }
+    &__left-title{
+        width: 188px;
+        height: 24px;
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    &__left-description{
+        width: 260px;
+        height: 75px;
+        font-size: 14px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.55);
+    }
+    &__right{
+        display: flex;
+        gap: 115px;
+    }
+
+    &__right-title{
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 20px;
+    }
+    &__right-average{
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 10px;
+    }
+    
+}

@@ -1,0 +1,60 @@
+.trust {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1224px;
+        height: 253px;
+        border: 2px;
+        border-radius: 25px;
+        background-color: rgba(44, 53, 61, 0.2);
+        margin-top: 200px;
+    }
+
+    &__top-title {
+        text-align: center;
+        min-width: 367px;
+        height: 36px;
+        font-weight: 500;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 55px;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 107px;
+        margin-top: 60px;
+    }
+
+}
+
+@media(max-width:1220px) {
+
+    .trust {
+        &__bottom {
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+        }
+
+        a {
+            width: 30%;
+
+        }
+    }
+}
+
+@media(max-width:580px) {
+    .trust {
+
+
+        a {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+    }
+}
